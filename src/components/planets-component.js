@@ -73,7 +73,7 @@ class Planets extends React.Component {
           <div>
             <SearchBox search={this.search} />
             {
-              searchedPlanets.length === 0 ? (<p className="error">No Planets Found. Please modify your search</p>) : null
+              searchedPlanets.length === 0 ? (<p className="error">No Planets Found</p>) : null
             }
           </div>
           <div className="loggedin-user">

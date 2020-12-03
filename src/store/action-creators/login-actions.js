@@ -28,7 +28,7 @@ export function loginAction(props, username, password) {
       .then(function (userDetails) {
         let users = userDetails.data.results, userFound = false;
         if (users.length === 0) {
-          dispatch(loginErrorMessageAction("No users found with the name of " + username));
+          dispatch(loginErrorMessageAction("No user found with the name of " + username));
         } else {
           users.forEach((user, index) => {
             if (user.name === username &&  user.birth_year === password) {

@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {
+  BrowserRouter as Router,
+  Route,
+} from 'react-router-dom';
+import { Provider } from 'react-redux';
+
+import store from '../src/store/app-store';
+import LoginComponent from '../src/components/login-component.js';
+import PlanetsComponent from '../src/components/planets-component';
+
+export default class AppContainer extends React.Component {
+
+  render() {
+    return (
+      <Provider store={store}>
+        <Router>
+          <div>
+            <Route exact path="/" component={LoginComponent} />
+            <Route path="/planets" component={PlanetsComponent} />
+          </div>
+        </Router>
+        </Provider>
+    )
+  }
 }
 
-export default App;
+AppContainer.contextTypes = { store: PropTypes.object };

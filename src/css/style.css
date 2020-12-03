@@ -1,0 +1,143 @@
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: darkcyan;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.error {
+  color: darkred;
+  text-align: left;
+  background-color: cadetblue;
+  padding: 6px;
+}
+
+.login-box {
+  padding: 30px 36px;
+  width: 350px;
+  box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.2);
+  background-color: cadetblue;
+}
+
+.header-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: calc(50vh - (450px/2)) auto 0;
+}
+
+.planet-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header{
+  font-size: 22px;
+  color: aliceblue;
+}
+
+.center{
+  text-align: center;
+}
+
+.login-box label {
+  font-size: 16px;
+}
+
+.login-box input {
+  width: 100%;
+  height: 35px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  margin: 0 0 20px;
+}
+
+.login-box input:focus {
+  outline: 0;
+}
+
+.login-box button {
+  float: right;
+  background: #263238;
+  color: #fff;
+  border: 0;
+  padding: 6px 20px;
+  cursor: pointer;
+}
+
+.login-box button::after {
+  clear: both;
+}
+
+.login-box input,
+.login-box button {
+  display: block;
+}
+
+.login-box .error {
+  margin: 0 0 10px;
+}
+
+.planets-component .search-box {
+  height: 45px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.planets-component .search-box + span {
+  margin: 10px;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+.loggedin-user {
+  padding: 15px;
+  font-size: 20px;
+}
+
+.planets-component .planets-container {
+  padding: 15px !important;
+}
+
+.planets-component .planets {
+  display: inline-grid;
+  border-radius: 100px;
+  color: #fff;
+  height: 100px;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  margin: 30px;
+  box-sizing: content-box;
+}
+
+.planets:hover{
+  transform: rotate(360deg);
+  transition: all 0.8s ease-in-out 0s;
+  background: cornsilk;
+}
+.planets-component .planets span {
+  display: block;
+}
+
+.align-right{
+  text-align: right;
+}
+
+.log-off{
+  padding: 6px;
+  color: white;
+  background-color: cadetblue;
+  cursor: pointer;
+}
+
+.log-off:hover{
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}

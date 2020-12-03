@@ -1,5 +1,5 @@
 #Live Demo-
-https://sharma-nitin.github.io/star-wars/#/planets
+https://sharma-nitin.github.io/star-wars/
 
 # Getting Started with Create React App
 
